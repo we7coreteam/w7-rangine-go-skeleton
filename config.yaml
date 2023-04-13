@@ -1,0 +1,29 @@
+app:
+  name: rangine
+  env: debug
+  server: http
+server:
+  http:
+    host: localhost
+    port: 8084
+log:
+  default:
+    driver: stream
+    path: run.log
+    level: debug
+database:
+  default:
+    driver: mysql
+    user: root
+    password: 123456
+    host: 172.16.1.13
+    port: 3306
+    db_name: we7_api
+    charset: utf8mb4
+    prefix: ims_
+redis:
+  default:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    db: 0
