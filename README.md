@@ -23,12 +23,6 @@ go版软擎骨架项目
 ./bin/rangine route:list
 ```
 
-### 查看所有注册路由
-
-```shell
-./bin/rangine route:list
-```
-
 ### 查看帮助信息
 
 ```shell
