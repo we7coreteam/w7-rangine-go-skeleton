@@ -4,7 +4,7 @@ import (
 	app "github.com/we7coreteam/w7-rangine-go/src"
 	"github.com/we7coreteam/w7-rangine-go/src/http/middleware"
 	httpserver "github.com/we7coreteam/w7-rangine-go/src/http/server"
-	"github.com/we7coreteam/w7api/app/home"
+	"github.com/we7coreteam/w7-rangine-go-skeleton/app/home"
 )
 
 func main() {
