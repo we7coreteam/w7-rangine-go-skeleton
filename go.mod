@@ -1,4 +1,4 @@
-module github.com/we7coreteam/w7api
+module github.com/we7coreteam/w7-rangine-go-skeleton
 
 go 1.19
 
