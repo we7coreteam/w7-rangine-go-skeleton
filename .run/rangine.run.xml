@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="rangine" type="GoApplicationRunConfiguration" factoryName="Go Application">
-    <module name="w7-rangine-go-empty" />
+  <configuration default="default" name="rangine" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="w7-rangine-go-skeleton" />
     <working_directory value="$PROJECT_DIR$" />
     <parameters value="server:start" />
     <EXTENSION ID="net.ashald.envfile">
@@ -16,7 +16,7 @@
     <kind value="DIRECTORY" />
     <directory value="$PROJECT_DIR$" />
     <filePath value="$PROJECT_DIR$/main.go" />
-    <output_directory value="$PROJECT_DIR$/runtime" />
+    <output_directory value="$PROJECT_DIR$/bin" />
     <method v="2" />
   </configuration>
 </component>
