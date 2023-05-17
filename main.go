@@ -1,20 +1,19 @@
 package main
 
 import (
-	app "github.com/we7coreteam/w7-rangine-go/src"
-	"github.com/we7coreteam/w7-rangine-go/src/http/middleware"
-	httpserver "github.com/we7coreteam/w7-rangine-go/src/http/server"
 	"github.com/we7coreteam/w7-rangine-go-skeleton/app/home"
+	app "github.com/we7coreteam/w7-rangine-go/src"
+	"github.com/we7coreteam/w7-rangine-go/src/http"
 )
 
 func main() {
 	app := app.NewApp()
 
-	httpserver.Use(middleware.PanicHandlerMiddleware{}.GetProcess())
-	httpserver.Use(middleware.NewSessionMiddleware(httpserver.GetSession()).Process)
+	// 业务中需要使用 http server，这里需要先实例化
+	httpServer := new(http.Provider).Register(app.GetConfig(), app.GetConsole(), app.GetServerManager()).Export()
 
-	// 此处注册 provider
-	app.GetProviderManager().RegisterProvider(new(home.Provider)).Register()
+	// 注册业务 provider，此模块中需要使用 http server 和 console
+	new(home.Provider).Register(httpServer, app.GetConsole())
 
 	app.RunConsole()
 }

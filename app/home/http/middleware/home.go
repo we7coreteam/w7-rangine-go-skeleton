@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/we7coreteam/w7-rangine-go/src/facade"
+	"github.com/we7coreteam/w7-rangine-go-support/src/facade"
 	"github.com/we7coreteam/w7-rangine-go/src/http/middleware"
 	"time"
 )
