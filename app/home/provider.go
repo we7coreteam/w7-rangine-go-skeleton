@@ -20,4 +20,8 @@ func (provider *Provider) Register(httpServer *http_server.Server, console conso
 	httpServer.RegisterRouters(func(engine *gin.Engine) {
 		engine.GET("/home/index", middleware.Home{}.Process, controller.Home{}.Index)
 	})
+
+	httpServer.RegisterRouters(func(engine *gin.Engine) {
+		engine.GET("/home/ws", middleware.Home{}.Process, controller.Home{}.Ws)
+	})
 }
