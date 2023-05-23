@@ -11,4 +11,5 @@ type Home struct {
 
 func (home Home) Index(ctx *gin.Context) {
 	home.JsonResponseWithoutError(ctx, "hello world!")
+	return
 }
