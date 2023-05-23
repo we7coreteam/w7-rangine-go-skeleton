@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/we7coreteam/w7-rangine-go-skeleton/app/home"
+	"github.com/we7coreteam/w7-rangine-go-skeleton/app/ws"
 	app "github.com/we7coreteam/w7-rangine-go/src"
 	"github.com/we7coreteam/w7-rangine-go/src/http"
 	"github.com/we7coreteam/w7-rangine-go/src/http/middleware"
@@ -31,6 +32,6 @@ func main() {
 
 	// 注册业务 provider，此模块中需要使用 http server 和 console
 	new(home.Provider).Register(httpServer, app.GetConsole())
-
+	new(ws.Provider).Register(httpServer, app.GetConsole())
 	app.RunConsole()
 }
