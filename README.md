@@ -6,9 +6,19 @@ go版软擎骨架项目
 
 ## 创建项目
 
+#### 安装 cli 工具
 ```
-export GOPATH=/tmp && go install github.com/we7coreteam/w7-rangine-go-skeleton@v1.0.5
-/tmp/w7-rangine-go-skeleton make:project /home/root/my-go-project
+export GOPATH=/tmp && go install -x github.com/we7coreteam/w7-rangine-go-skeleton@v1.0.6
+```
+
+#### 创建项目
+```
+/tmp/bin/w7-rangine-go-skeleton make:project /home/root/my-go-project
+
+# 进入目录，初始化，编译
+cd /home/root/my-go-project
+go get -u && go mod tidy
+go build -o ./bin/rangine .
 ```
 
 ## 辅助命令
