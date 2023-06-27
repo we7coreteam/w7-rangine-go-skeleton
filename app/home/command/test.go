@@ -18,6 +18,10 @@ func (test Test) GetDescription() string {
 	return "test command"
 }
 
+func (self Test) Configure(command *cobra.Command) {
+	command.Flags().String("name", "test", "test name params")
+}
+
 func (test Test) Handle(cmd *cobra.Command, args []string) {
 	color.Infoln("home test")
 }
