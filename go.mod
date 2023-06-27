@@ -81,5 +81,3 @@ require (
 	gorm.io/hints v1.1.2 // indirect
 	gorm.io/plugin/dbresolver v1.4.1 // indirect
 )
-
-replace github.com/we7coreteam/w7-rangine-go => ../w7-rangine-go
