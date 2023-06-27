@@ -1,7 +1,9 @@
 package main
 
 import (
+	_ "embed"
 	"github.com/gin-gonic/gin"
+	"github.com/spf13/viper"
 	"github.com/we7coreteam/w7-rangine-go-skeleton/app/home"
 	app "github.com/we7coreteam/w7-rangine-go/src"
 	"github.com/we7coreteam/w7-rangine-go/src/http"
@@ -10,8 +12,18 @@ import (
 	http2 "net/http"
 )
 
+//go:embed config.yaml
+var ConfigFile []byte
+
+type provider struct {
+	ConfigDefault func(viper *viper.Viper)
+	EventDault    func()
+}
+
 func main() {
-	app := app.NewApp()
+	app := app.NewApp(app.Option{
+		Name: "w7-rangine-go-skeleton",
+	})
 
 	// 业务中需要使用 http server，这里需要先实例化
 	httpServer := new(http.Provider).Register(app.GetConfig(), app.GetConsole(), app.GetServerManager()).Export()
