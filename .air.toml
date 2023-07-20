@@ -3,7 +3,7 @@ testdata_dir = "testdata"
 tmp_dir = "runtime"
 
 [build]
-  args_bin = []
+  args_bin = ["-f", "config.yaml"]
   bin = "./runtime/main"
   cmd = "go build -o ./runtime/main ."
   delay = 0
