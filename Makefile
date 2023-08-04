@@ -1,4 +1,4 @@
-PROJECT_NAME=raninge
+PROJECT_NAME=rangine
 
 GO_BASE=$(shell pwd)
 GO_BIN=$(GO_BASE)/bin
