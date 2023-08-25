@@ -14,11 +14,11 @@ log:
 database:
   default:
     driver: mysql
-    user: root
-    password: 123456
-    host: 172.16.1.13
+    user_name: ${MYSQL_USERNAME-root}
+    password: ${MYSQL_PASSWORD-123456}
+    host: ${MYSQL_ADDRESS-127.0.0.1}
     port: 3306
-    db_name: we7_api
+    db_name: ${MYSQL_DATABASE-test}
     charset: utf8mb4
     prefix: ims_
 redis:
