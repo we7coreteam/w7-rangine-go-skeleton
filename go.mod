@@ -8,7 +8,7 @@ require (
 	github.com/gorilla/websocket v1.5.0
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
-	github.com/we7coreteam/w7-rangine-go v1.0.18
+	github.com/we7coreteam/w7-rangine-go v1.0.19
 	github.com/we7coreteam/w7-rangine-go-support v1.0.1
 )
 
