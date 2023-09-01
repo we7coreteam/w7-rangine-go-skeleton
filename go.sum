@@ -281,8 +281,10 @@ github.com/twitchyliquid64/golang-asm v0.15.1 h1:SU5vSMR7hnwNxj24w34ZyCi/FmDZTkS
 github.com/twitchyliquid64/golang-asm v0.15.1/go.mod h1:a1lVb/DtPvCB8fslRZhAngC2+aY1QWCk3Cedj/Gdt08=
 github.com/ugorji/go/codec v1.2.11 h1:BMaWp1Bb6fHwEtbplGBGJ498wD+LKlNSl25MjdZY4dU=
 github.com/ugorji/go/codec v1.2.11/go.mod h1:UNopzCgEMSXjBc6AOMqYvWC1ktqTAfzJZUZgYf6w6lg=
-github.com/we7coreteam/w7-rangine-go v1.0.14 h1:0jNkg5K6qUSDmoJ5K+oMDCRBXjM8IY7+WZDVNMNeujQ=
-github.com/we7coreteam/w7-rangine-go v1.0.14/go.mod h1:iG6+NNAPMvPhCvXyH1AepYtfZFrs+tvQx30MjvKMw30=
+github.com/we7coreteam/gorm-gen-yaml v1.0.1 h1:aNEE2p6h8lFxQEePuWHVlwVI8agehLs2K05+dnMij6I=
+github.com/we7coreteam/gorm-gen-yaml v1.0.1/go.mod h1:Au8YvqjDI8TZR0RAMWy4vDKSDZc3ZRtLVaB3Vr49JyY=
+github.com/we7coreteam/w7-rangine-go v1.0.19 h1:tSyizh5IoWs6pUUmkFY6ODzMQoZq4hgtyqMAZp1YXdg=
+github.com/we7coreteam/w7-rangine-go v1.0.19/go.mod h1:57WP21oecI7Gvh0/fd3ZLLhj/6J0unMC2MRFREPQADY=
 github.com/we7coreteam/w7-rangine-go-support v1.0.1 h1:u9/gNmtPJMekvNI3zYzFbgqwD46Lpeib3StTTpwrVuM=
 github.com/we7coreteam/w7-rangine-go-support v1.0.1/go.mod h1:XHkctahxj7VWvv5IyRsXGoN9/OFJycWF3vxfzgksxdc=
 github.com/xo/terminfo v0.0.0-20220910002029-abceb7e1c41e h1:JVG44RsyaB9T2KIHavMF/ppJZNG9ZpyihvCd0w101no=
