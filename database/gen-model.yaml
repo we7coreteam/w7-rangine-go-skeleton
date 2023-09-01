@@ -1,0 +1,7 @@
+relation:
+  - table: user
+    relate:
+      - table: user_profile
+        foreign_key: user_id
+        type: has_one
+  - table: user_profile
