@@ -8,8 +8,16 @@ server:
     port: 8084
 log:
   default:
+    driver: stack
+    channels:
+      - file
+      - console
+  file:
     driver: file
     path: run.log
+    level: debug
+  console:
+    driver: console
     level: debug
 database:
   default:
